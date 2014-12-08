@@ -3,7 +3,7 @@
 <!--[if lt IE 7]><html <?php language_attributes(); ?> class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
 <!--[if (IE 7)&!(IEMobile)]><html <?php language_attributes(); ?> class="no-js lt-ie9 lt-ie8"><![endif]-->
 <!--[if (IE 8)&!(IEMobile)]><html <?php language_attributes(); ?> class="no-js lt-ie9"><![endif]-->
-<!--[if gt IE 8]><!--> <html <?php language_attributes(); ?> class="no-js"><!--<![endif]-->
+<!--[if gt IE 8]><!--> <html <?php language_attributes(); ?> class="no-js" prefix="og: http://ogp.me/ns#"><!--<![endif]-->
 
 	<head>
 		<meta charset="utf-8">
@@ -26,7 +26,16 @@
 		<link rel="apple-touch-icon" sizes="72x72" href="<?php echo get_template_directory_uri(); ?>/library/images/favicons/apple-touch-icon-72x72.png" />
 		<link rel="apple-touch-icon" sizes="114x114" href="<?php echo get_template_directory_uri(); ?>/library/images/favicons/apple-touch-icon-114x114.png" />
 		<link rel="apple-touch-icon" sizes="144x144" href="<?php echo get_template_directory_uri(); ?>/library/images/favicons/apple-touch-icon-144x144.png" />
-		
+
+		<?php // Facebook ?>
+		<meta property="og:title" content="Code for Tokyo" />
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content="http://codefor.tokyo/wp-content/themes/cft/library/images/favicons/ogp_fb.png" />
+		<meta property="og:url" content="http://codefor.tokyo/" />
+		<meta property="og:description" content="" />
+		<meta property="og:site_name" content="Code for Tokyo" />
+		<meta property="fb:admins" content="649793200" />
+
 		<!--[if IE]>
 			<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 		<![endif]-->
@@ -64,18 +73,26 @@
 							<?php // bloginfo('description'); ?>
 
 <!-- for localsite -->
-<nav role="navigation"><ul id="menu-version1" class="nav top-nav cf">
+<!-- <nav role="navigation"><ul id="menu-version1" class="nav top-nav cf">
 <li id="menu-item-15" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15"><a href="http://localhost:8888/code_for_tokyo/category/event/"><i class="fa fa-comments-o"></i> イベント</a></li>
 <li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18"><a href="http://localhost:8888/code_for_tokyo/about/"><i class="fa fa-smile-o"></i> Code for Tokyoについて</a></li>
 <li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27"><a href="http://localhost:8888/code_for_tokyo/members/"><i class="fa fa-rocket"></i> 運営メンバー</a></li>
 <li id="menu-item-33" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33"><a href="https://www.facebook.com/groups/codefortokyo/" target="_blank"><i class="fa fa-facebook-square"></i> Facebookグループ <i class="fa fa-external-link"></i></a></li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="http://www.meetup.com/Code-for-Tokyo/" target="_blank"><i class="fa fa-beer"></i> Meetup group <i class="fa fa-external-link"></i></a></li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://vimeo.com/codefortokyo" target="_blank"><i class="fa fa-vimeo-square"></i> Vimeo（映像）<i class="fa fa-external-link"></i></a></li>
-</ul></nav>
+</ul></nav> -->
 <!--//for localsite -->
 
-
-
+<!-- for publicsite -->
+<nav role="navigation"><ul id="menu-version1" class="nav top-nav cf">
+<li id="menu-item-15" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15"><a href="/category/event/"><i class="fa fa-comments-o"></i> イベント</a></li>
+<li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18"><a href="/about/"><i class="fa fa-smile-o"></i> Code for Tokyoについて</a></li>
+<li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27"><a href="/members/"><i class="fa fa-rocket"></i> 運営メンバー</a></li>
+<li id="menu-item-33" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33"><a href="https://www.facebook.com/groups/codefortokyo/" target="_blank"><i class="fa fa-facebook-square"></i> Facebookグループ <i class="fa fa-external-link"></i></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="http://www.meetup.com/Code-for-Tokyo/" target="_blank"><i class="fa fa-beer"></i> Meetup group <i class="fa fa-external-link"></i></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://vimeo.com/codefortokyo" target="_blank"><i class="fa fa-vimeo-square"></i> Vimeo（映像）<i class="fa fa-external-link"></i></a></li>
+</ul></nav>
+<!--//for publicsite -->
 
 
 				</div>
